@@ -2,12 +2,15 @@
 
 <head>
     <title>Iderize.com</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="media.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
 </head>
 
 <body>
@@ -22,7 +25,7 @@
             <li>Contact</li>
         </ul>
     </header>
-    <div class="landing-page">
+    <div class="landing-page slide">
         <div class="main-title">
             <div class="title">
                 IDERIZE
@@ -32,7 +35,26 @@
             </div>
         </div>
     </div>
+    <div class="slide">
+        <div class="we" style="font-size: 60px; padding-left: 30px; margin-bottom: -10px">
+            We
+        </div>
+<div class="row" style="padding: 25px; color: #444">
+            <!--ko foreach: services-->
+            <div class="col-md-3">
+                <div class="card services-card">
+                        <div class="services-title" data-bind="text: title"></div>
+                        <div class="services-content">
+                            <ul data-bind="foreach: content">
+                                <li data-bind="text: $data"></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <!--/ko-->
+</div>
+    </div>
 
 </body>
-
+<script src="main.js"></script>
 </html>
