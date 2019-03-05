@@ -200,3 +200,44 @@ body{
     padding: 10px;
 }
 
+
+.button-know {
+	-moz-box-shadow: 5px 2px 8px 1px #e6cafc;
+	-webkit-box-shadow: 5px 2px 8px 1px #e6cafc;
+	box-shadow: 5px 2px 8px 1px #e6cafc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cd97f7), color-stop(1, #9431e6) );
+	background:-moz-linear-gradient( center top, #cd97f7 5%, #9431e6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cd97f7', endColorstr='#9431e6');
+	background-color:#cd97f7;
+	-webkit-border-top-left-radius:17px;
+	-moz-border-radius-topleft:17px;
+	border-top-left-radius:17px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:17px;
+	-moz-border-radius-bottomright:17px;
+	border-bottom-right-radius:17px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	display:inline-block;
+	color:#ffffff;
+	font-size:16px;
+	font-style:normal;
+	height:44px;
+	line-height:44px;
+	width:154px;
+	text-decoration:none;
+	text-align:center;
+    text-shadow:1px 1px 0px #8628ce;
+}
+.button-know:hover {
+    color: white;
+    text-decoration: none;    
+    transition: all 1s ease-in;
+	position:relative;
+	top:1px;
+}
+/* This button was generated using CSSButtonGenerator.com */

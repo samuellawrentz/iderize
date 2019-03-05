@@ -1,4 +1,4 @@
-function WebmailViewModel() {
+function IderizeViewModel() {
     // Data
     var self = this;
     self.services = [
@@ -36,7 +36,7 @@ function WebmailViewModel() {
     }
 };
 
-ko.applyBindings(new WebmailViewModel());
+ko.applyBindings(new IderizeViewModel());
 
 var sections = {},
 _height  = $(window).height(),
@@ -44,7 +44,7 @@ i        = 0;
 
 // Grab positions of our sections 
 $('.slide').each(function(){
-sections[$(this).attr('name')] = $(this).offset().top - 30;
+sections[$(this).attr('name')] = $(this).offset().top - 80;
 });
 
 $(document).scroll(function(){
