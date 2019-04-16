@@ -48,7 +48,6 @@ h6 {
 .services-list {
   list-style: none;
     line-height: 30px;
-    padding-left: 52px;
 }
 
 /* Back to top button */
@@ -207,7 +206,7 @@ h6 {
 }
 
 #intro .intro-info .btn-get-started,
-#intro .intro-info .btn-services {
+#intro .intro-info .btn-services, .but .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -220,13 +219,13 @@ h6 {
   color: #fff;
 }
 
-#intro .intro-info .btn-get-started {
+#intro .intro-info .btn-get-started, .but .btn-services {
   background: #007bff;
   border: 2px solid #007bff;
   color: #fff;
 }
 
-#intro .intro-info .btn-get-started:hover {
+#intro .intro-info .btn-get-started:hover, .but .btn-services {
   background: none;
   border-color: #fff;
   color: #fff;
@@ -474,7 +473,7 @@ h6 {
   font-size: 15px;
   padding-bottom: 60px;
   color: #556877;
-  width: 50%;
+  width: 90%;
 }
 
 /* Section with background
@@ -600,10 +599,16 @@ h6 {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  margin: 0 10px 40px 10px;
+  margin: 0 15px 40px 15px;
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
+}
+
+.services-card{
+  width: 45%;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 #services .box:hover {
