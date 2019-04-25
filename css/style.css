@@ -620,6 +620,12 @@ h6 {
   vertical-align: text-top;
 }
 
+.side .services-card{
+  width: 90%;
+  font-size: 16px;
+  margin-left: -75px;
+}
+
 #services .box:hover {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
