@@ -219,6 +219,15 @@ h6 {
   color: #fff;
 }
 
+.btn-services.scrollto{
+  padding: 10px 32px;
+    border: 2px solid #007bff;
+    border-radius: 50px;
+}
+
+.btn-services.scrollto:hover{
+  box-shadow: 2px 5px 5px rgba(0,0,0,.12)
+}
 #intro .intro-info .btn-get-started, .but .btn-services {
   background: #007bff;
   border: 2px solid #007bff;
@@ -594,7 +603,7 @@ h6 {
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#services .box {
+#services .box, #solutions .box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -713,7 +722,6 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 48px;
-  display: block;
   color: #fff;
 }
 
